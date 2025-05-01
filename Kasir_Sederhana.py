@@ -1,13 +1,14 @@
 #-------------------------Program Kasir Sederhana----------------------------
 
-nama = input("Masukkan nama Anda: ")
+nama = input("\nMasukkan nama Anda: ")
 
-print("=== Daftar Menu ===")
+print("\n=== Daftar Menu ===")
 print("1. Nasi Goreng   : Rp. 15.000")
 print("2. Ayam Goreng   : Rp. 20.000")
 print("3. Es Teh        : Rp. 5.000")
 print("4. Es Jeruk      : Rp. 5.000")
 print("5. Es Kelapa     : Rp. 5.000")
+print("=============================")
 
 # Daftar untuk menyimpan pesanan
 pesanan = []
@@ -45,9 +46,9 @@ while True:
     else:
         print("Menu tidak valid. Silakan coba lagi.")
 
-        # Menampilkan struk pembelian
-        print("\n=== Struk Pembelian ===")
-        print("Nama:", nama)
-        for item, jumlah, total in pesanan:
-            print(f"- {item} x{jumlah} : Rp. {total}")
-            print(f"Total keseluruhan: Rp. {total_harga}")
+# Menampilkan struk pembelian
+print("\n=== Struk Pembelian ===")
+print("Nama:", nama)
+for item, jumlah, total in pesanan:
+    print(f"- {item} x{jumlah} : Rp. {total}")
+print(f"Total keseluruhan: Rp. {total_harga}")
